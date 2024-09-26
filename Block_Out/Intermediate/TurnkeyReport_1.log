@@ -1,0 +1,2 @@
+Win64: (Status=Invalid, MinAllowed_Sdk=10.0.18362.0, MaxAllowed_Sdk=10.9.99999.0, Current_Sdk=, Allowed_AutoSdk=10.0.19041.0, Current_AutoSdk=, Flags="Platform_ValidHostPrerequisites")
+Win64@DESKTOP-7ODCVN8: (Name=DESKTOP-7ODCVN8, Type=Computer, Status=Valid, MinAllowed=10.0.18362.0, MaxAllowed=, Current=10.0.19045.0, Flags="Device_InstallSoftwareValid")
