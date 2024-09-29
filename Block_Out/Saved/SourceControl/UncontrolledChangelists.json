@@ -1,0 +1,23 @@
+{
+	"version": 1,
+	"changelists": [
+		{
+			"guid": "00000000000000000000000000000000",
+			"description": "Default Uncontrolled Changelist",
+			"files": [
+				"C:/Users/anime/Documents/GitHub/rockstars/RockStars/Block_Out/Content/import/videos/Bendyspeeddraw.uasset",
+				"C:/Users/anime/Documents/GitHub/rockstars/RockStars/Block_Out/Content/import/videos/Bendyspeeddraw_Video.uasset",
+				"C:/Users/anime/Documents/GitHub/rockstars/RockStars/Block_Out/Content/import/videos/Bendyspeeddraw_Video_Mat.uasset",
+				"C:/Users/anime/Documents/GitHub/rockstars/RockStars/Block_Out/Content/import/videos/Bnedy_speed_draw.uasset",
+				"C:/Users/anime/Documents/GitHub/rockstars/RockStars/Block_Out/Content/import/videos/car-rot_rigging_speed.uasset",
+				"C:/Users/anime/Documents/GitHub/rockstars/RockStars/Block_Out/Content/import/videos/riggingspeed.uasset",
+				"C:/Users/anime/Documents/GitHub/rockstars/RockStars/Block_Out/Content/import/videos/riggingspeed_Video.uasset",
+				"C:/Users/anime/Documents/GitHub/rockstars/RockStars/Block_Out/Content/import/videos/riggingspeed_Video_Mat.uasset",
+				"E:/UNITY ONLY/Repo/RockStars/Block_Out/Content/Canyon/Map/Canyon.umap",
+				"E:/UNITY ONLY/Repo/RockStars/Block_Out/Content/StarterContent/Materials/M_Concrete_Grime.uasset",
+				"C:/Users/glaci/Documents/GitHub/RockStars/Block_Out/Content/__ExternalActors__/StarterContent/Maps/BlockOut/C/KQ/TP4MLAWYRGEY91OHZMRTEW.uasset",
+				"C:/Users/glaci/Documents/GitHub/RockStars/Block_Out/Content/__ExternalActors__/StarterContent/Maps/BlockOut/5/IV/07AZZ4MS3KVHU5FNHDCXZV.uasset"
+			]
+		}
+	]
+}
