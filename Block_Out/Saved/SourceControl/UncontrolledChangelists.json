@@ -5,6 +5,9 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
+				"C:/Users/glaci/Documents/GitHub/RockStars/Block_Out/Content/__ExternalActors__/StarterContent/Maps/BlockOut/C/KQ/TP4MLAWYRGEY91OHZMRTEW.uasset",
+				"C:/Users/glaci/Documents/Unreal Projects/Block_Out_MAIN-BRANCH-BACKUP/Content/__ExternalActors__/StarterContent/Maps/BlockOut/6/QQ/XKX4PE0Q2LZRNBTY0FNQB2.uasset",
+				"C:/Users/glaci/Documents/Unreal Projects/Block_Out_MAIN-BRANCH-BACKUP/Content/__ExternalActors__/StarterContent/Maps/BlockOut/C/CU/KJAFTD746U4D9FIWMYVNBW.uasset",
 				"E:/UNITY ONLY/Workshop 1/Block_Out/Content/Canyon/Map/Canyon.umap",
 				"E:/UNITY ONLY/Repo/RockStars/Block_Out/Content/Canyon/Map/Canyon.umap",
 				"E:/UNITY ONLY/Repo/RockStars/Block_Out/Content/StarterContent/Materials/M_Concrete_Grime.uasset",
@@ -12,7 +15,6 @@
 				"E:/UNITY ONLY/Repo/RockStars/Block_Out/Content/StarterContent/Materials/Red.uasset",
 				"E:/UNITY ONLY/Repo/RockStars/Block_Out/Content/ThirdPerson/Blueprints/EnemyAI/BP_EnemyCharacter.uasset",
 				"E:/UNITY ONLY/Repo/RockStars/Block_Out/Content/ThirdPerson/Blueprints/Weapons/BP_Weapon_Keytar.uasset",
-				"C:/Users/glaci/Documents/GitHub/RockStars/Block_Out/Content/__ExternalActors__/StarterContent/Maps/BlockOut/C/KQ/TP4MLAWYRGEY91OHZMRTEW.uasset",
 				"C:/Users/glaci/Documents/GitHub/RockStars/Block_Out/Content/__ExternalActors__/StarterContent/Maps/BlockOut/5/IV/07AZZ4MS3KVHU5FNHDCXZV.uasset"
 			]
 		}
