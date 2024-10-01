@@ -1,6 +1,0 @@
-2024/09/30-13:28:03.328 7bf0 Creating DB F:/unrealprojects/RockStars/Block_Out/Saved/webcache_4430\IndexedDB\https_www.youtube-nocookie.com_0.indexeddb.leveldb since it was missing.
-2024/09/30-13:28:03.684 7bf0 Reusing MANIFEST F:/unrealprojects/RockStars/Block_Out/Saved/webcache_4430\IndexedDB\https_www.youtube-nocookie.com_0.indexeddb.leveldb/MANIFEST-000001
-2024/09/30-13:28:31.226 8410 Level-0 table #5: started
-2024/09/30-13:28:31.297 8410 Level-0 table #5: 1167 bytes OK
-2024/09/30-13:28:31.338 8410 Delete type=0 #3
-2024/09/30-13:28:31.339 8410 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

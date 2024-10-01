@@ -1,8 +1,0 @@
-2024/09/30-13:28:31.905 82e0 Reusing MANIFEST F:/unrealprojects/RockStars/Block_Out/Saved/webcache_4430\IndexedDB\https_www.youtube-nocookie.com_0.indexeddb.leveldb/MANIFEST-000001
-2024/09/30-13:28:31.906 82e0 Recovering log #4
-2024/09/30-13:28:31.906 82e0 Reusing old log F:/unrealprojects/RockStars/Block_Out/Saved/webcache_4430\IndexedDB\https_www.youtube-nocookie.com_0.indexeddb.leveldb/000004.log 
-2024/09/30-13:29:48.432 6fd0 Level-0 table #8: started
-2024/09/30-13:29:48.432 6fd0 Level-0 table #8: 0 bytes OK
-2024/09/30-13:29:48.487 6fd0 Delete type=0 #4
-2024/09/30-13:29:48.487 6fd0 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
-2024/09/30-13:29:48.487 6fd0 Manual compaction at level-1 from (begin) .. (end); will stop at (end)
