@@ -1,0 +1,4 @@
+Begin Object Class=/Script/Engine.UserDefinedEnum Name="Enum_Status" ExportPath="/Script/Engine.UserDefinedEnum'/Game/Users/Dylan/EnemyBlueprints/Erg_AI/Enum_Status.Enum_Status'"
+   UniqueNameIndex=2
+   DisplayNameMap=(("NewEnumerator0", NSLOCTEXT("[90BA373EA7D97C022456952B004EB20D]", "0071AF24497E574C8F56389B8112708F", "Standard")),("NewEnumerator1", NSLOCTEXT("[90BA373EA7D97C022456952B004EB20D]", "2FE851F4421DA65BBC72A2A1455998A1", "Stunned")))
+End Object
