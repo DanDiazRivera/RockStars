@@ -1,0 +1,12 @@
+Gameplay:
+/Script/Engine.BlueprintGeneratedClass'/Game/Users/Stanley/BP_DialogueTrigger.BP_DialogueTrigger_C'
+
+Steiny:
+/Script/Engine.BlueprintGeneratedClass'/Game/LevelStuff/ThirdPerson/Blueprints/NPC/BP_NPC_Steiny.BP_NPC_Steiny_C'
+
+Tiny:
+/Script/Engine.BlueprintGeneratedClass'/Game/LevelStuff/ThirdPerson/Blueprints/NPC/BP_NPC_Tiny.BP_NPC_Tiny_C'
+
+("line1", "line2", "line3")
+
+TRUE FALSE
