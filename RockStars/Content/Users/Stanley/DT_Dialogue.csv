@@ -1,0 +1,4 @@
+Row Name,NPC,Dialogue Trigger,Person Talking,Main Dialogue Lines,Give Weapon?,Secondary Dialogue,Encounter Index
+1,/Script/Engine.BlueprintGeneratedClass'/Game/LevelStuff/ThirdPerson/Blueprints/NPC/BP_NPC_Steiny.BP_NPC_Steiny_C',None,"(""test"", ""test2"")","(""md1"", ""md2"", ""md3"")",TRUE,"""testing""",0
+2,/Script/Engine.BlueprintGeneratedClass'/Game/LevelStuff/ThirdPerson/Blueprints/NPC/BP_NPC_Steiny.BP_NPC_Steiny_C',,"(""RU receiving"")","(""some dialogue"")",TRUE,"""more dialogue"")",1
+3,,,,,,,
