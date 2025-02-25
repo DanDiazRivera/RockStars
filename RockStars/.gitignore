@@ -73,6 +73,7 @@ Plugins/*/Intermediate/*
 DerivedDataCache/*
 
 # Include these binary files as they are needed to fix the missing modules error
+# For some reason it still ignores these files, so use git add -f to force add them
 !Binaries/Win64/RockStarsEditor.target
 !Binaries/Win64/UnrealEditor.modules
 !Binaries/Win64/UnrealEditor-RockStars.dll
