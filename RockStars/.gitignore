@@ -45,7 +45,6 @@ SourceArt/**/*.png
 SourceArt/**/*.tga
 
 # Binary Files
-Binaries/*
 Plugins/*/Binaries/*
 
 # Builds
@@ -72,8 +71,13 @@ Plugins/*/Intermediate/*
 # Cache files for the editor to use
 DerivedDataCache/*
 
-# Include these binary files as they are needed to fix the missing modules error
-# For some reason it still ignores these files, so use git add -f to force add them
-!Binaries/Win64/RockStarsEditor.target
-!Binaries/Win64/UnrealEditor.modules
-!Binaries/Win64/UnrealEditor-RockStars.dll
+# For some reason it still ignores files even when I put "!" in front.
+# "!" indicates that the provided path should not be ignored.
+# For example, I just put !FilePath/FileName.txt and it still ignores it.
+# You can use git add -f to force add specific files.
+# However, I will include all binary files and then tell it what to ignore as it seems to work.
+*Binaries/Win64/RockStars-Win64-DebugGame.exp
+*Binaries/Win64/RockStars-Win64-DebugGame.pdb
+*Binaries/Win64/RockStars-Win64-DebugGame.target
+*Binaries/Win64/tbb.pdb
+*Binaries/Win64/tbbmalloc.pdb
