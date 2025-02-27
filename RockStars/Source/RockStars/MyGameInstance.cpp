@@ -10,6 +10,7 @@ void UMyGameInstance::Init()
 	Super::Init();
 
 	// Bind the PreLoadMap and PostLoadMapWithWorld delegates
+	// Called right when map loading begins and ends, which allows the loading screen to display and hide automatically.
 	FCoreUObjectDelegates::PreLoadMap.AddUObject(this, &UMyGameInstance::BeginLoadingScreen);
 	FCoreUObjectDelegates::PostLoadMapWithWorld.AddUObject(this, &UMyGameInstance::EndLoadingScreen);
 }
