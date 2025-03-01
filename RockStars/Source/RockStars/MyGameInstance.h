@@ -15,7 +15,7 @@ class ROCKSTARS_API UMyGameInstance : public UGameInstance
 	GENERATED_BODY()
 
 public:
-	// Allows us to overrid the Init function to bind to the PreLoadMap and PostLoadMapWithWorld delegates
+	// Allows us to override the Init function to bind to the PreLoadMap and PostLoadMapWithWorld delegates
 	virtual void Init() override;
 
 	UFUNCTION()
