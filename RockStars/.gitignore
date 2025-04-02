@@ -85,5 +85,8 @@ DerivedDataCache/*
 *Binaries/Win64/RockStars-Win64-Shipping.exp
 *Binaries/Win64/RockStars-Win64-Shipping.pdb
 *Binaries/Win64/RockStars-Win64-Shipping.target
+*Binaries/Win64/RockStars.exp
+*Binaries/Win64/RockStars.pdb
+*Binaries/Win64/RockStars.target
 *Binaries/Win64/tbb.pdb
 *Binaries/Win64/tbbmalloc.pdb
