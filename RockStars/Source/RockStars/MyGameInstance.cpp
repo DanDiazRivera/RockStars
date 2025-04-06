@@ -13,6 +13,9 @@ void UMyGameInstance::Init()
 	// Called right when map loading begins and ends, which allows the loading screen to display and hide automatically.
 	FCoreUObjectDelegates::PreLoadMap.AddUObject(this, &UMyGameInstance::BeginLoadingScreen);
 	FCoreUObjectDelegates::PostLoadMapWithWorld.AddUObject(this, &UMyGameInstance::EndLoadingScreen);
+
+	// Call the Init_BP function that is implemented in blueprints
+	Init_BP();
 }
 
 void UMyGameInstance::BeginLoadingScreen(const FString& MapName)
