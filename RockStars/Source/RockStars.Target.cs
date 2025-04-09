@@ -10,6 +10,8 @@ public class RockStarsTarget : TargetRules
 		Type = TargetType.Game;
 		DefaultBuildSettings = BuildSettingsVersion.V5;
 
+		IncludeOrderVersion = EngineIncludeOrderVersion.Latest;
+
 		ExtraModuleNames.AddRange( new string[] { "RockStars" } );
 	}
 }
