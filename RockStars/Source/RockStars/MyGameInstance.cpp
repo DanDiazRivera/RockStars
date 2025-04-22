@@ -3,6 +3,7 @@
 
 #include "MyGameInstance.h"
 #include "MoviePlayer.h"
+#include "GenericPlatform/GenericPlatformInputDeviceMapper.h"
 
 void UMyGameInstance::Init()
 {
@@ -13,6 +14,9 @@ void UMyGameInstance::Init()
 	// Called right when map loading begins and ends, which allows the loading screen to display and hide automatically.
 	FCoreUObjectDelegates::PreLoadMap.AddUObject(this, &UMyGameInstance::BeginLoadingScreen);
 	FCoreUObjectDelegates::PostLoadMapWithWorld.AddUObject(this, &UMyGameInstance::EndLoadingScreen);
+
+	// Bind the controller connection change delegate
+	IPlatformInputDeviceMapper::Get().GetOnInputDeviceConnectionChange().AddUObject(this, &UMyGameInstance::ControllerConnectionChanged);
 
 	// Call the Init_BP function that is implemented in blueprints
 	Init_BP();
@@ -59,4 +63,22 @@ void UMyGameInstance::EndLoadingScreen(UWorld* LoadedWorld)
 		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Loading screen ended!"));
 	}
 #endif
+}
+
+void UMyGameInstance::ControllerConnectionChanged(EInputDeviceConnectionState connectionState, FPlatformUserId userID, FInputDeviceId inputDeviceID)
+{
+	// Check if the controller is connected or disconnected
+	bool bIsConnected = (connectionState == EInputDeviceConnectionState::Connected);
+
+	// Broadcast the event to notify any listeners
+	OnUserInputDeviceConnectionChange.Broadcast(bIsConnected);
+}
+
+void UMyGameInstance::Shutdown()
+{
+	// Call the base implementation
+	Super::Shutdown();
+
+	// Call the Shutdown_BP function that is implemented in blueprints
+	Shutdown_BP();
 }
