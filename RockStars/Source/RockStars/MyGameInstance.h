@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "Engine/GameInstance.h"
+#include "SteamManager.h"
 #include "MyGameInstance.generated.h"
 
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnUserInputDeviceConnectionChanged, bool, bIsConnected);
@@ -40,4 +41,18 @@ public:
 	FOnUserInputDeviceConnectionChanged OnUserInputDeviceConnectionChange;
 	// Function to run when the controller is plugged in or unplugged
 	void ControllerConnectionChanged(EInputDeviceConnectionState connectionState, FPlatformUserId userID, FInputDeviceId inputDeviceID);
+
+	UPROPERTY(BlueprintReadOnly, Category = "Steam")
+	USteamManager* SteamManager;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Steam")
+	bool bIsSteamOverlayActive = false;
+
+	const bool EnableUSteamManagerFeatures = true;
+
+	void PublicOnSteamOverlayActive();
+	void PublicOnSteamOverlayDeactive();
+
+	UFUNCTION(BlueprintImplementableEvent, Category = "Steam")
+	void OnSteamOverlayActivated(bool isOverlayActive);
 };

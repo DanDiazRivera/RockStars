@@ -18,6 +18,28 @@ void UMyGameInstance::Init()
 	// Bind the controller connection change delegate
 	IPlatformInputDeviceMapper::Get().GetOnInputDeviceConnectionChange().AddUObject(this, &UMyGameInstance::ControllerConnectionChanged);
 
+	if (EnableUSteamManagerFeatures)
+	{
+		if (SteamUser() != nullptr)
+		{
+			// Create an instance of the SteamManager class
+			SteamManager = NewObject<USteamManager>();
+			SteamManager->InitializeSteamManager();
+			SteamManager->SetGameInstanceRef(this);
+			return;
+		}
+		else
+		{
+			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Failed, no SteamUser instance found!"));
+			return;
+		}
+	}
+	else
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT
+			("EnableUSteamManagerFeatures is false, so custom Steamworks features not initialized."));
+	}
+
 	// Call the Init_BP function that is implemented in blueprints
 	Init_BP();
 }
@@ -72,6 +94,18 @@ void UMyGameInstance::ControllerConnectionChanged(EInputDeviceConnectionState co
 
 	// Broadcast the event to notify any listeners
 	OnUserInputDeviceConnectionChange.Broadcast(bIsConnected);
+}
+
+void UMyGameInstance::PublicOnSteamOverlayActive()
+{
+	bIsSteamOverlayActive = true;
+	OnSteamOverlayActivated(bIsSteamOverlayActive);
+}
+
+void UMyGameInstance::PublicOnSteamOverlayDeactive()
+{
+	bIsSteamOverlayActive = false;
+	OnSteamOverlayActivated(bIsSteamOverlayActive);
 }
 
 void UMyGameInstance::Shutdown()
