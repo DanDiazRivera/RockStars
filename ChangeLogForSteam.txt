@@ -1,3 +1,7 @@
 air time and game completion time better writing so it is now accurate. 
 no more too big value to write so it breaks.
 
+behind the scenes changes to make values update better
+
+Hitbox for after cave achievement is more accurate to the location of the NPCs and van.
+
